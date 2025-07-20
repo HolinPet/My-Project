@@ -1,0 +1,63 @@
+<!--Ассортимент товаров-->
+<div class="advantage">
+  <div class="big-assortment">
+    <img src="/assets/big-assortment-logo.svg" alt="assortment" />
+    <div class="advantage-text">
+      Большой ассортимент <span>строительных материалов всегда в наличии</span>
+    </div>
+  </div>
+  <div class="big-assortment">
+    <img src="/assets/delivery-logo.svg" alt="delivery" />
+    <div class="advantage-text">
+      Доставка стройматериалов
+      <span>в течении четырех часов или в любое удобное время</span>
+    </div>
+  </div>
+  <div class="big-assortment">
+    <img src="/assets/system-logo.svg" alt="system" />
+    <div class="advantage-text">
+      <span>Многоуровневая</span> система управления качеством
+      <span>по стандарту ISO 9001</span>
+    </div>
+  </div>
+</div>
+
+<div class="go-to-catalog">
+  <div class="number-to-catalog">
+    <button class="number-buttons" *ngFor="let item of newPages">
+      {{ item }}
+    </button>
+  </div>
+  <div class="assortment-cards">
+    <div class="assortment-cards-item">
+      <div class="title-cards-item">Строительный отделочный инструмент</div>
+      <div class="go-to-catalog-rigth">
+        Перейти в каталог<span class="arrow-catalog">→</span>
+      </div>
+    </div>
+    <div class="assortment-cards-item">
+      <div class="title-cards-item right">Эмали</div>
+      <div class="go-to-catalog-rigth">
+        Перейти в каталог<span class="arrow-catalog">→</span>
+      </div>
+    </div>
+    <div class="assortment-cards-item">
+      <div class="title-cards-item">Лакокрасочные материалы</div>
+      <div class="go-to-catalog-left">
+        Перейти в каталог<span class="arrow-catalog">→</span>
+      </div>
+    </div>
+    <div class="assortment-cards-item">
+      <div class="title-cards-item">Пены, клеи и герметики</div>
+      <div class="go-to-catalog-left">
+        Перейти в каталог<span class="arrow-catalog">→</span>
+      </div>
+    </div>
+    <div class="assortment-cards-item">
+      <div class="title-cards-item">Розетки и выключатели</div>
+      <div class="go-to-catalog-rigth">
+        Перейти в каталог<span class="arrow-catalog">→</span>
+      </div>
+    </div>
+  </div>
+</div>

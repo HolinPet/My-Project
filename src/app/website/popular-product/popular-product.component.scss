@@ -1,0 +1,242 @@
+// Популярные товары
+
+.popular-product {
+  max-width: 1412px;
+  margin: 0 auto;
+}
+
+.popular-product-item {
+  max-width: 1320px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.arrow-button {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.arrow-button.left {
+  left: -2%;
+  top: 56%;
+}
+
+.arrow-button.right {
+  right: -2%;
+  top: 56%;
+}
+
+.arrow-button.right img {
+  transform: rotate(180deg);
+}
+
+.looking-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-color {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.looking-all-product {
+  color: #f0ba4e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.popular-card-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 28px;
+  gap: 28px;
+}
+
+@media (max-width: 1400px) {
+  .popular-card-product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .popular-card-product {
+    grid-template-columns: 1fr;
+  }
+}
+
+.popular-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 309px;
+  height: 429px;
+  box-sizing: border-box;
+  box-shadow: 1px -1px 6px 0 rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+// @media (max-width: 900px) {
+//   .popular-card {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// } 
+
+.discount-and-favorites {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  max-width: 261px;
+  height: 39px;
+  flex-flow: wrap;
+}
+
+.popular-card:nth-of-type(3) .discount-and-favorites {
+  height: 90px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.discount-logo-position {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.disk-icon {
+  background: url("/assets/disk.png") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+}
+
+.popular-card-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50%;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: 600;
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+.articul-product {
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 256px;
+  height: 19px;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.product-price-align {
+  display: flex;
+}
+
+.product-full-price {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 16px;
+}
+
+.product-discount-price {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.quantity-and-basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 53px;
+  font-size: 16px;
+}
+
+.quantity-product {
+  font-size: 16px;
+  display: flex;
+  gap: 11px;
+}
+
+.quantity-popular-product {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.count-regulator {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.count-product {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.product-basket {
+  border: 1px solid #f0ba4e;
+  padding: 14px 28px;
+  border-radius: 54px;
+  width: 135px;
+}
+
+// Рекламный текс
+
+.advertising-text {
+  max-width: 1320px;
+  height: 251px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+}
+
+.advertising-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advertising-container {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.advertising-man {
+  padding-right: 16px;
+}
+
+.advertising-text-1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  line-height: 100%;
+}
+
+.advertising-text-2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.advertising-text-3 {
+  color: #f0ba4e;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0;
+}

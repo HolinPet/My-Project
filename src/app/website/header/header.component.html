@@ -1,0 +1,61 @@
+<!--Шапка сайта-->
+
+<div class="content-container-header-top">
+  <div class="header-top">
+    <div class="header-top-left">
+      <img src="/assets/Logo-header.svg" />
+      <div>Главная</div>
+      <div>О компании</div>
+      <div>Каталог</div>
+    </div>
+    <div class="header-top-right">
+      <div class="call-number">
+        <img src="/assets/Phone.svg" />
+        <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+      </div>
+      <img
+        class="favorite-logo-header"
+        src="/assets/Favorite-logo.svg"
+        alt="логотоп избранного"
+      />
+      <div class="basket-field">
+        <img src="/assets/basket.svg" />
+        <p class="basket-field-text">Пусто</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-container-header-bottom">
+  <div class="header-bottom">
+    <div class="header-bottom-left">
+      <div class="catalog">
+        <img src="/assets/logo-catalog.svg" />
+        <div>Каталог</div>
+      </div>
+      <div class="assortment">
+        <div>Стройматериалы</div>
+        <div>Инструменты</div>
+        <div>Электрика</div>
+        <div>Интерьер и одежда</div>
+      </div>
+    </div>
+    <div class="header-bottom-right">
+      <div class="search-field">
+        <input
+          class="placeholder"
+          type="text"
+          placeholder="Поиск, например Круг зачистной"
+        />
+        <img class="search-logo" src="/assets/search-logo.svg" />
+      </div>
+      <div class="map-location">
+        <img src="/assets/map-pin.svg" />
+        <span class="city-map">Москва</span>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="toggleImage" (click)="toggleImage()">Скрыть/Показать фото</button>
+<div class="employee-photo"
+*ngIf="isPhotoVisible">
+</div>

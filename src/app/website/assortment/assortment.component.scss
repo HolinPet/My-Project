@@ -1,0 +1,185 @@
+// Виды товаров
+
+.advantage {
+  align-items: center;
+  max-width: 1319px;
+  height: 72px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 1300px) {
+  .advantage {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .advantage {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+.big-assortment {
+  font-size: 18px;
+  width: 421px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #000000;
+}
+
+.advantage-text {
+  display: inline;
+  align-items: center;
+  width: 333px;
+  height: 66px;
+}
+
+.go-to-catalog {
+  max-width: 1320px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+.number-to-catalog {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  width: 114px;
+  height: 19px;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+
+
+.number-buttons {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a1a0a0;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 19px;
+}
+
+.assortment-cards {
+  display: grid;
+  max-width: 1320px;
+  grid-template-columns: repeat(3, 421px);
+  gap: 28px;
+}
+
+@media (max-width: 1300px) {
+  .assortment-cards {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .assortment-cards {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+.assortment-cards-item {
+  background-color: #3c3c3b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 16px;
+  box-shadow: 1px -1px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1000px) {
+  .assortment-cards-item {
+    max-width: 500px;
+    min-width: 200px;
+  }
+}
+
+.assortment-cards-item:first-child {
+  grid-row: span 2;
+  height: 428px;
+}
+
+.go-to-catalog-rigth {
+  align-self: flex-end;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.go-to-catalog-left {
+  align-self: flex-start;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.title-cards-item {
+  align-self: flex-start;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.assortment-cards-item:nth-of-type(2) .title-cards-item {
+  align-self: flex-end;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.assortment-cards-item:nth-of-type(4) .title-cards-item {
+  max-width: 218px;
+  height: 68px;
+}
+
+.arrow-catalog {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border: 1px solid #f0ba4e;
+  border-radius: 50px;
+  color: #000000;
+  font-size: 18px;
+}
+
+.assortment-cards-item:nth-of-type(1) {
+  background: url("/assets/construction-tool.svg") no-repeat;
+  background-position: left bottom;
+}
+
+.assortment-cards-item:nth-of-type(2) {
+  background: url("/assets/enamel.svg") no-repeat;
+  background-position: left bottom;
+}
+
+.assortment-cards-item:nth-of-type(3) {
+  background: url("/assets/paints-and-varnishes.svg") no-repeat;
+  background-position: right bottom;
+}
+
+.assortment-cards-item:nth-of-type(4) {
+  background: url("/assets/foams-and-adhesives.svg") no-repeat;
+  background-position: right bottom;
+}
+
+.assortment-cards-item:nth-of-type(5) {
+  background: url("/assets/sockets-and-switches.svg") no-repeat;
+  background-position: left bottom;
+}
