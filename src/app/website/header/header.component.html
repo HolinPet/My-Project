@@ -2,16 +2,19 @@
 
 <div class="content-container-header-top">
   <div class="header-top">
-    <div class="header-top-left">
+    <nav class="header-top-left">
       <img src="/assets/Logo-header.svg" />
-      <div>Главная</div>
-      <div>О компании</div>
-      <div>Каталог</div>
+      <a href="">{{ headerItem1 }}</a>
+      <a href="" routerLink="/">{{ aboutCompany }}</a>
+      <a href="">{{ headerItem3 }}</a>
+    </nav>
+    <div class="button-position">
+      <button class="changeMenuText-buttons" routerLink="users">Users</button>
     </div>
     <div class="header-top-right">
       <div class="call-number">
         <img src="/assets/Phone.svg" />
-        <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+        <a class="phones" href="tel:+74951234567">+7 (495) 123-45-67</a>
       </div>
       <img
         class="favorite-logo-header"
@@ -19,7 +22,7 @@
         alt="логотоп избранного"
       />
       <div class="basket-field">
-        <img src="/assets/basket.svg" />
+        <mat-icon basket>shopping_cart</mat-icon>
         <p class="basket-field-text">Пусто</p>
       </div>
     </div>
@@ -32,12 +35,12 @@
         <img src="/assets/logo-catalog.svg" />
         <div>Каталог</div>
       </div>
-      <div class="assortment">
+      <nav class="assortment">
         <div>Стройматериалы</div>
         <div>Инструменты</div>
         <div>Электрика</div>
         <div>Интерьер и одежда</div>
-      </div>
+      </nav>
     </div>
     <div class="header-bottom-right">
       <div class="search-field">
@@ -54,8 +57,4 @@
       </div>
     </div>
   </div>
-</div>
-<button class="toggleImage" (click)="toggleImage()">Скрыть/Показать фото</button>
-<div class="employee-photo"
-*ngIf="isPhotoVisible">
 </div>

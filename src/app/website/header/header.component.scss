@@ -1,3 +1,5 @@
+@import "../../normalize.scss";
+
 // HEADER
 
 *,
@@ -23,6 +25,25 @@
   padding: 0 60px;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.button-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.changeMenuText {
+  display: flex;
+  gap: 5px;
+  margin: 0;
+}
+
+.changeMenuText-buttons {
+  border-radius: 5px;
+  border: none;
+  background-color: #f0ba4e;
 }
 
 .header-top-left,
@@ -58,6 +79,14 @@
   align-items: center;
   gap: 10px;
   white-space: nowrap;
+}
+
+.phones {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .favorite-logo-header {
@@ -211,21 +240,4 @@
   .assortment {
     display: none;
   }
-}
-
-// Employee photo
-
-.toggleImage {
-  background: rgb(49, 224, 230);
-  border-radius: 15px;
-}
-
-.employee-photo {
-  width: 100%;
-  max-width: 1920px;
-  aspect-ratio: 1920 / 720;
-  background-image: url("/assets/employee-photo.svg");
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 28px;
 }

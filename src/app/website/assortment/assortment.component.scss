@@ -1,3 +1,20 @@
+// Employee photo
+
+.toggleImage {
+  background: rgb(49, 224, 230);
+  border-radius: 15px;
+}
+
+.employee-photo {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 1920 / 720;
+  background-image: url("/assets/employee-photo.svg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 28px;
+}
+
 // Виды товаров
 
 .advantage {

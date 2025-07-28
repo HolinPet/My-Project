@@ -1,4 +1,8 @@
 <!--Ассортимент товаров-->
+<button class="toggleImage" (click)="toggleImage()">
+  Скрыть/Показать фото
+</button>
+<div class="employee-photo" *ngIf="isPhotoVisible"></div>
 <div class="advantage">
   <div class="big-assortment">
     <img src="/assets/big-assortment-logo.svg" alt="assortment" />

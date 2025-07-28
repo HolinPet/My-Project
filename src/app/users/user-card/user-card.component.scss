@@ -1,0 +1,44 @@
+.component-cards-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 15px;
+  word-wrap: break-word;
+  background: var(--mat-background, #f5f5f5);
+  transition: background 1s ease;
+}
+
+.more-vert-position {
+  position: absolute;
+  right: 0px;
+  top: 7px;
+}
+
+.component-cards-item:hover {
+  background: var(--mat-primary, hsl(175, 64%, 46%));
+}
+
+.text-height {
+  line-height: 14px;
+  font-size: 14px;
+}
+
+.card-buttons {
+  align-self: center;
+  width: 70px;
+  border-radius: 18px;
+  border: none;
+  background: var(--mat-background, #f5f5f5);
+  transition: background 0.5s ease;
+}
+
+.card-change {
+  display: flex;
+  justify-content: space-between;
+}

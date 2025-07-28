@@ -1,0 +1,41 @@
+.component-forms {
+  width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.form-input {
+  width: 300px;
+}
+
+.form-item {
+  margin: 30px 30px 30px 0px;
+}
+
+.form-item-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-form {
+  align-items: center;
+  width: 130px;
+  margin-top: 20px;
+}
+
+.button-position {
+  margin-top: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.add-element {
+  color: green;
+  transform: scale(1.5);
+}
+
+.cancel-element {
+  color: red;
+  transform: scale(1.5);
+}
